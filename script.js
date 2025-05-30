@@ -15,7 +15,7 @@ document.getElementById("resultForm").addEventListener("submit", function(e) {
   // Download file
   const link = document.createElement("a");
   link.href = filePath;
-  link.download = fileName;
+  link.download = filePath;
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
